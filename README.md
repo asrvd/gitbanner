@@ -1,4 +1,4 @@
-# Github Rreadme Banner Generator
+# Github Readme Banner Generator
 Generate Banner for you Profile Readme on GitHub.
 
 ## Example Banner for Reference
