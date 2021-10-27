@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100%;
+    background-color: rgb(13, 11, 20);
+    flex-direction: column;
+    font-family: 'Poppins' sans-serif;
+    height: 100%;
+}
+
+.navbar-container {
+    height: 40px;
+    top: 0;
+    position: sticky;
+    
+}
+
+.navbar {
+    background-color: rgb(21, 20, 24);
+    padding: 2rem;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    font-weight: bolder;
+}
+
+.nav-link {
+    list-style: none;
+    font-family: 'Poppins' sans-serif;
+}
+
+.nav-link li {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: fit-content;
+    width: 100vw;
+}
+
+.main-container input {
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    width: 40%;
+    padding: 0.8rem;
+    margin: 0.3rem;
+    font-size: 1.2rem;
+    color: #ffff;
+}
+
+.image-container {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container span {
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+
+.main-container h2 {
+    color: #ffff;
+    text-align: left;
+    margin-bottom: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1.4rem;
+}
+
+.main-container button {
+    padding: 0.5rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: #ffff;
+    font-size: 1.5rem;
+}
+
+.main-container span {
+    margin-top: 1rem;
+    
+    font-size: 1rem;
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 2rem;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer p {
+    color: #ffff;
+    font-size: 1rem;
+}
