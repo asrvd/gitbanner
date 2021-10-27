@@ -63,7 +63,7 @@ btn.addEventListener("click", async () => {
         ctx2.tectAlign = "center";
         ctx2.fillText(`${extra1.value.toUpperCase()} | ${extra2.value.toUpperCase()}`, (canvas2.width / 2), 440)
     })
-    back.src = "/assets/images/banner.jpg";
+    back.src = "./assets/images/banner.jpg";
     image_cont.appendChild(canvas2)
     showtext.innerText = "Right Click on Image to Download."
 })
