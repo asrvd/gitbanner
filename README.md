@@ -1,5 +1,5 @@
 # Github Readme Banner Generator
-Generate Banner for you Profile Readme on GitHub.
+Github Readme Banner Generator for your profile! Generate Banner for you Profile Readme on GitHub.
 
 ## Example Banner for Reference
 <img src="./assets/images/download.png" align="center"></img>
