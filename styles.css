@@ -80,7 +80,7 @@ a {
 
 .hero-container {
     width: 100%;
-    background-image: url(/assets/images/bg.png);
+    background-image: url(./assets/images/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
