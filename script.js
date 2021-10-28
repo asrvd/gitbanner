@@ -18,6 +18,7 @@ async function fetch_acct(username) {
 
 function make_canvas(link) {
     var img = new Image();
+    img.crossOrigin = "anonymous";
     //console.log(resp['avatar_url']);
     img.onload =  function() {
         canvas.width = cw = 220;
@@ -43,6 +44,7 @@ btn.addEventListener("click", async () => {
     var n = json_data['name'];
     var im = make_canvas(json_data['avatar_url'])
     var back = new Image();
+    back.crossOrigin = "anonymous";
     //console.log(ctx);
     back.addEventListener('load', function() {
         canvas2.width = 1000;
