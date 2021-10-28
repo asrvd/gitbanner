@@ -43,7 +43,6 @@ btn.addEventListener("click", async () => {
     var n = json_data['name'];
     var im = make_canvas(json_data['avatar_url'])
     var back = new Image();
-    
     //console.log(ctx);
     back.addEventListener('load', function() {
         canvas2.width = 1000;
@@ -70,7 +69,6 @@ btn.addEventListener("click", async () => {
         showtext.innerHTML = `<a href=${banner.src} download>Click Here to Download</a>`;
         
     })
-    
     back.src = "./assets/images/backg.jpg";
     
 })
