@@ -71,7 +71,7 @@ btn.addEventListener("click", async () => {
         
     })
     
-    back.src = "![](assets/images/backg.jpg)";
+    back.src = "./assets/images/backg.jpg";
     
 })
 
