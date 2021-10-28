@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script type="text/python" src="/script.bry"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <title>GRBG</title>
 </head>
 <body>
@@ -19,19 +20,29 @@
             </ul>
         </div>
     </div>
-    <section class="main-container">
-        <div class="image-container" id="image_container">
-            <span id="text"></span>
-        </div>
-        <input type="text" id="user" placeholder="GitHub Username">
-        <h2><i class="fas fa-paint-brush"></i> About You ~ Enter words like Developer, Student..</h2>
-        <input type="text" name="" id="extra1" placeholder="Developer">
-        <input type="text" name="" id="extra2" placeholder="Student">
-        <button id="show">Generate</button>
-        <span>If the Profile Image doesn't upload, try clicking on button again please.</span>
-    </section>
-    <section class="footer">
-        <p>&copy; ashish | 2021</p>
-    </section>
+    <div class="hero-container">
+        <section class="main-container">
+                <div class="box">
+                    <div class="outer-cont">
+                        <div class="image-container" id="image_container"> 
+                    </div>
+                    </div>
+                    <span id="text"></span>
+                    <div class="user-input">
+                        <input type="text" id="user" placeholder="GitHub Username">
+                    </div>
+                    <h2><i class="fas fa-paint-brush"></i> About You ~ Enter words like Developer, Student..</h2>
+                    <div class="extra-container">
+                        <input type="text" name="" id="extra1" placeholder="Developer">
+                        <input type="text" name="" id="extra2" placeholder="Student">
+                    </div>
+                    <div class="btn-container">
+                        <button id="show">Generate</button>
+                    </div>
+                    <span>If the Profile Image doesn't upload, try clicking on button again please.</span>
+                    <p class="footer">&copy; ashish | 2021</p>
+                </div>
+        </section>
+    </div>
 </body>
 </html>

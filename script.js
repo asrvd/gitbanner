@@ -18,6 +18,7 @@ async function fetch_acct(username) {
 
 function make_canvas(link) {
     var img = new Image();
+    img.crossOrigin = "anonymous";
     //console.log(resp['avatar_url']);
     img.onload =  function() {
         canvas.width = cw = 220;
@@ -32,7 +33,7 @@ function make_canvas(link) {
         ctx.fill()
     };
     img.src = link;
-    console.log(img.src)
+    //console.log(img.src)
     return canvas;
 }
 
@@ -43,6 +44,7 @@ btn.addEventListener("click", async () => {
     var n = json_data['name'];
     var im = make_canvas(json_data['avatar_url'])
     var back = new Image();
+    back.crossOrigin = "anonymous";
     
     //console.log(ctx);
     back.addEventListener('load', function() {
@@ -50,7 +52,7 @@ btn.addEventListener("click", async () => {
         canvas2.height = 500;
         var ctx2 = canvas2.getContext("2d");
         ctx2.drawImage(back, 0 , 0);
-        console.log(im);
+        //console.log(im);
         ctx2.drawImage(im, 388, 41);
         ctx2.fillStyle = "white";
         ctx2.font = "30px Poppins";
@@ -62,9 +64,20 @@ btn.addEventListener("click", async () => {
         ctx2.font = "800 60px Poppins";
         ctx2.tectAlign = "center";
         ctx2.fillText(`${extra1.value.toUpperCase()} | ${extra2.value.toUpperCase()}`, (canvas2.width / 2), 440)
+        var banner = new Image();
+        banner.setAttribute('crossorigin', 'anonymous');
+        banner.src = canvas2.toDataURL("image/png");
+        clear();
+        image_cont.appendChild(banner);
+        showtext.innerHTML = `<a href=${banner.src} download>Click Here to Download</a>`;
+        
     })
-    back.src = "./assets/images/banner.jpg";
-    image_cont.appendChild(canvas2)
-    showtext.innerText = "Right Click on Image to Download."
+    
+    back.src = "/assets/images/banner.jpg";
+    
 })
+
+function clear() {
+    image_cont.innerHTML = "";
+}
 
