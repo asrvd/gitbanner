@@ -1,5 +1,5 @@
 import React from 'react'
-import { themes } from '../../themes'
+import { themes } from '../../themes.js'
 
 export const ComponentToPrint = React.forwardRef((props, ref) => {
     const theme = themes[props.theme]

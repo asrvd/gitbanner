@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react'
 import './App.css'
-import { get_user } from './api';
+import { get_user } from './api.js';
 import html2canvas from 'html2canvas';
 const maincanvas = document.createElement('canvas');
-import { ComponentToPrint } from './components/card';
+import { ComponentToPrint } from './components/card.jsx';
 import {
   Menu,
   MenuButton,
@@ -20,7 +20,7 @@ import {
   MenuDivider,
 } from '@chakra-ui/react'
 import {FaAngleDown} from 'react-icons/fa'
-import { themes } from '../themes';
+import { themes } from '../themes.js';
 
 
 function App() {
