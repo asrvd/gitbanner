@@ -1,7 +1,7 @@
 {
   "name": "readme-banner",
   "private": true,
-  "homepage": "https://github.com/asheeeshh/github-readme-banner-generator",
+  "homepage": "https://asheeeshh.github.io/github-readme-banner-generator",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
