@@ -124,7 +124,7 @@ function App() {
             </div>
           </div>
         </div>
-        <p className='footer'>Made with ❤ by <a href="https://github.com/asheeeshh" target={'blank'}>@asheeeshh</a></p>
+        <p className='footer'>Made with ❤ by <a href="https://github.com/asrvd" target={'blank'}>@asrvd</a></p>
         <p className='footer last'>&copy; ashish | 2021-present</p>
       </div>
     </React.Fragment>
